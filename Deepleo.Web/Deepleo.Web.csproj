@@ -22,6 +22,7 @@
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -200,6 +201,8 @@
     <Content Include="Views\Media\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\blogonbench - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\blogonbench - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\BotChat.pubxml" />
     <None Include="Properties\PublishProfiles\ForBO1 - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\ForBO1 - Web Deploy.pubxml" />

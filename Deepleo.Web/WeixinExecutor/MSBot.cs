@@ -26,7 +26,9 @@ namespace Deepleo.Web
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("BotConnector", "uc0nyMvM0NI.cwA.wYs.B8F1M7cEBm9StsTDG8pmuOjhnxeCJd2LdvNlKVfBgro");
             // for leon
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("BotConnector", "aDyJxnUSx30.cwA.WOg.4DzXtwItzBC6jyUCxHXG8fLKcgdx2zZYf2BkkfW5Lpc");
+            //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("BotConnector", "aDyJxnUSx30.cwA.WOg.4DzXtwItzBC6jyUCxHXG8fLKcgdx2zZYf2BkkfW5Lpc");
+            //for roche
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("BotConnector", System.Configuration.ConfigurationManager.AppSettings["BotKey"]);
             // for doudou
             //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("BotConnector", "iCoMHD3whk8.cwA.50s.vlUvoUn7IjjRuHkSeNZQ2dOIHHTOftz07bAJRF2WJy8");
 
